@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_90f87ad128f09b3bcf52fc52b55da962 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_90f87ad128f09b3bcf52fc52b55da962" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_90f87ad128f09b3bcf52fc52b55da962 = L.map(
+                "map_90f87ad128f09b3bcf52fc52b55da962",
+                {
+                    center: [31.462140256747546, 73.14853656660802],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 18,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f479e95ee1d21b1fcac99d1a62c280cf = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f479e95ee1d21b1fcac99d1a62c280cf.addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var marker_d152a75f05e88bc124d5b2e97fc3bafb = L.marker(
+                [31.46081717880768, 73.147092820739],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_eebd9eef0e89268d2a000b637f71c37c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f784b5f136dfc5e3bd3f6e46b5d8eb2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a17fecdacb16383fe91c96c0b02e5c1a = $(`<div id="html_a17fecdacb16383fe91c96c0b02e5c1a" style="width: 100.0%; height: 100.0%;"><b>Parking</b><br>Lat: 31.46082, Lng: 73.14709</div>`)[0];
+                popup_2f784b5f136dfc5e3bd3f6e46b5d8eb2.setContent(html_a17fecdacb16383fe91c96c0b02e5c1a);
+            
+        
+
+        marker_d152a75f05e88bc124d5b2e97fc3bafb.bindPopup(popup_2f784b5f136dfc5e3bd3f6e46b5d8eb2)
+        ;
+
+        
+    
+    
+                marker_d152a75f05e88bc124d5b2e97fc3bafb.setIcon(icon_eebd9eef0e89268d2a000b637f71c37c);
+            
+    
+            var marker_3b674e1e2b132b043d05e0e9fa257a21 = L.marker(
+                [31.461333672941866, 73.14805734079162],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_ce1a02cadc80706c41a5a547013ca1be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9136de8291263f0231a38c158652bc77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b250463158180f8de97fea9b4d89c72d = $(`<div id="html_b250463158180f8de97fea9b4d89c72d" style="width: 100.0%; height: 100.0%;"><b>Play Ground</b><br>Lat: 31.46133, Lng: 73.14806</div>`)[0];
+                popup_9136de8291263f0231a38c158652bc77.setContent(html_b250463158180f8de97fea9b4d89c72d);
+            
+        
+
+        marker_3b674e1e2b132b043d05e0e9fa257a21.bindPopup(popup_9136de8291263f0231a38c158652bc77)
+        ;
+
+        
+    
+    
+                marker_3b674e1e2b132b043d05e0e9fa257a21.setIcon(icon_ce1a02cadc80706c41a5a547013ca1be);
+            
+    
+            var marker_e990d4c41d137f877279d3a23e3345f8 = L.marker(
+                [31.461562981172438, 73.14829804863288],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_073693da9bf645b21468b5041563ca8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fb25edc30261e69e8934494b6e94593 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4843327ccf0dfd7773e957dfe0ea7045 = $(`<div id="html_4843327ccf0dfd7773e957dfe0ea7045" style="width: 100.0%; height: 100.0%;"><b>NTU Admission office</b><br>Lat: 31.46156, Lng: 73.14830</div>`)[0];
+                popup_5fb25edc30261e69e8934494b6e94593.setContent(html_4843327ccf0dfd7773e957dfe0ea7045);
+            
+        
+
+        marker_e990d4c41d137f877279d3a23e3345f8.bindPopup(popup_5fb25edc30261e69e8934494b6e94593)
+        ;
+
+        
+    
+    
+                marker_e990d4c41d137f877279d3a23e3345f8.setIcon(icon_073693da9bf645b21468b5041563ca8d);
+            
+    
+            var marker_e76db6a3ff73589ee0882d82f7b016a8 = L.marker(
+                [31.46181627667768, 73.1476341349666],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_549f5589386d5042cb76ebc62b77fff5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0e39f4dfe09469ac1e06311e46d0bbb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8c5f913c8ad79c3727efc01d4881fa43 = $(`<div id="html_8c5f913c8ad79c3727efc01d4881fa43" style="width: 100.0%; height: 100.0%;"><b>library</b><br>Lat: 31.46182, Lng: 73.14763</div>`)[0];
+                popup_a0e39f4dfe09469ac1e06311e46d0bbb.setContent(html_8c5f913c8ad79c3727efc01d4881fa43);
+            
+        
+
+        marker_e76db6a3ff73589ee0882d82f7b016a8.bindPopup(popup_a0e39f4dfe09469ac1e06311e46d0bbb)
+        ;
+
+        
+    
+    
+                marker_e76db6a3ff73589ee0882d82f7b016a8.setIcon(icon_549f5589386d5042cb76ebc62b77fff5);
+            
+    
+            var marker_e924eb58f5fe19e16e7ddfa4615ed89c = L.marker(
+                [31.46190271190029, 73.14797306591923],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_00d06f0ad2c183cf54e109a612fa8fdf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ab6ecd99c722b9ca3920e2f825d74e8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d2fafec8b34f1fef012d9c55845f7d9c = $(`<div id="html_d2fafec8b34f1fef012d9c55845f7d9c" style="width: 100.0%; height: 100.0%;"><b>Department of textile Technology</b><br>Lat: 31.46190, Lng: 73.14797</div>`)[0];
+                popup_9ab6ecd99c722b9ca3920e2f825d74e8.setContent(html_d2fafec8b34f1fef012d9c55845f7d9c);
+            
+        
+
+        marker_e924eb58f5fe19e16e7ddfa4615ed89c.bindPopup(popup_9ab6ecd99c722b9ca3920e2f825d74e8)
+        ;
+
+        
+    
+    
+                marker_e924eb58f5fe19e16e7ddfa4615ed89c.setIcon(icon_00d06f0ad2c183cf54e109a612fa8fdf);
+            
+    
+            var marker_32bdd45d205c3b26497135002af18601 = L.marker(
+                [31.4619335984168, 73.14831974143283],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_c15e7d444f1addcd69031e2b01b77a43 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47ecb3c0be9a91247db844c3ecfbacf4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_10fea3b1a9f6969becb7772cddc49335 = $(`<div id="html_10fea3b1a9f6969becb7772cddc49335" style="width: 100.0%; height: 100.0%;"><b>University Auditorium</b><br>Lat: 31.46193, Lng: 73.14832</div>`)[0];
+                popup_47ecb3c0be9a91247db844c3ecfbacf4.setContent(html_10fea3b1a9f6969becb7772cddc49335);
+            
+        
+
+        marker_32bdd45d205c3b26497135002af18601.bindPopup(popup_47ecb3c0be9a91247db844c3ecfbacf4)
+        ;
+
+        
+    
+    
+                marker_32bdd45d205c3b26497135002af18601.setIcon(icon_c15e7d444f1addcd69031e2b01b77a43);
+            
+    
+            var marker_d551d0897001af3861bda26efd733ee3 = L.marker(
+                [31.46198736381052, 73.14870463842514],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_51a7fa27a63761256de47412be3005d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a74d3b0a5fe4d14abe183d04c9f07b41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fb04e25808aad47b8acb78f0631e464a = $(`<div id="html_fb04e25808aad47b8acb78f0631e464a" style="width: 100.0%; height: 100.0%;"><b>Rector office</b><br>Lat: 31.46199, Lng: 73.14870</div>`)[0];
+                popup_a74d3b0a5fe4d14abe183d04c9f07b41.setContent(html_fb04e25808aad47b8acb78f0631e464a);
+            
+        
+
+        marker_d551d0897001af3861bda26efd733ee3.bindPopup(popup_a74d3b0a5fe4d14abe183d04c9f07b41)
+        ;
+
+        
+    
+    
+                marker_d551d0897001af3861bda26efd733ee3.setIcon(icon_51a7fa27a63761256de47412be3005d5);
+            
+    
+            var marker_ff4bb939d604b7a673a590b21b16c158 = L.marker(
+                [31.462070403829756, 73.14829940012471],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_37066467c52f6d39820218e5da177efe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c19fe5cc9c23bbeab05dd6b6734d7db5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_869e48ade35201f8fb0dfaad720cc33f = $(`<div id="html_869e48ade35201f8fb0dfaad720cc33f" style="width: 100.0%; height: 100.0%;"><b>CECA</b><br>Lat: 31.46207, Lng: 73.14830</div>`)[0];
+                popup_c19fe5cc9c23bbeab05dd6b6734d7db5.setContent(html_869e48ade35201f8fb0dfaad720cc33f);
+            
+        
+
+        marker_ff4bb939d604b7a673a590b21b16c158.bindPopup(popup_c19fe5cc9c23bbeab05dd6b6734d7db5)
+        ;
+
+        
+    
+    
+                marker_ff4bb939d604b7a673a590b21b16c158.setIcon(icon_37066467c52f6d39820218e5da177efe);
+            
+    
+            var marker_35d738ccde92b3d892df03aa0949f44c = L.marker(
+                [31.462256389411486, 73.1476910309468],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_5bc0e62661c5012b2b693f89c71303fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_41b988de8c96de663ae312ff7e98b9ac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5cc8cd2866d3a8383aa2b2b7b5274f7b = $(`<div id="html_5cc8cd2866d3a8383aa2b2b7b5274f7b" style="width: 100.0%; height: 100.0%;"><b>Weaving Lab</b><br>Lat: 31.46226, Lng: 73.14769</div>`)[0];
+                popup_41b988de8c96de663ae312ff7e98b9ac.setContent(html_5cc8cd2866d3a8383aa2b2b7b5274f7b);
+            
+        
+
+        marker_35d738ccde92b3d892df03aa0949f44c.bindPopup(popup_41b988de8c96de663ae312ff7e98b9ac)
+        ;
+
+        
+    
+    
+                marker_35d738ccde92b3d892df03aa0949f44c.setIcon(icon_5bc0e62661c5012b2b693f89c71303fb);
+            
+    
+            var marker_513b94e85f106f337e5f8acf9f43f123 = L.marker(
+                [31.46209333142246, 73.1477403727427],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_9ea4c84d7908d7714b09befe66d168a2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2918a933deaa01719d01dda1462cb738 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_83963fee083ad31aa2eb6970a9ff470e = $(`<div id="html_83963fee083ad31aa2eb6970a9ff470e" style="width: 100.0%; height: 100.0%;"><b>Weaving Department</b><br>Lat: 31.46209, Lng: 73.14774</div>`)[0];
+                popup_2918a933deaa01719d01dda1462cb738.setContent(html_83963fee083ad31aa2eb6970a9ff470e);
+            
+        
+
+        marker_513b94e85f106f337e5f8acf9f43f123.bindPopup(popup_2918a933deaa01719d01dda1462cb738)
+        ;
+
+        
+    
+    
+                marker_513b94e85f106f337e5f8acf9f43f123.setIcon(icon_9ea4c84d7908d7714b09befe66d168a2);
+            
+    
+            var marker_b53f7aeb61dc7d3a663a6942a7a52dc3 = L.marker(
+                [31.46227418692055, 73.1477939677962],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_7d6bd4a5c0f3935b3749dad423083c88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f3457762d3d71f95bd2757f2f5a9b7a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78834b59993bc93f54d540593e1ba939 = $(`<div id="html_78834b59993bc93f54d540593e1ba939" style="width: 100.0%; height: 100.0%;"><b>Garments</b><br>Lat: 31.46227, Lng: 73.14779</div>`)[0];
+                popup_0f3457762d3d71f95bd2757f2f5a9b7a.setContent(html_78834b59993bc93f54d540593e1ba939);
+            
+        
+
+        marker_b53f7aeb61dc7d3a663a6942a7a52dc3.bindPopup(popup_0f3457762d3d71f95bd2757f2f5a9b7a)
+        ;
+
+        
+    
+    
+                marker_b53f7aeb61dc7d3a663a6942a7a52dc3.setIcon(icon_7d6bd4a5c0f3935b3749dad423083c88);
+            
+    
+            var marker_46749780ff775349a405afd92b4b83a3 = L.marker(
+                [31.462218952501416, 73.14748763003652],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_372c2f58b62dcb04451ec57f0fb8e751 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c016a576ee0c1a7caab445ef30a2ff8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72029ab0b584c7fd56b5a09119034be5 = $(`<div id="html_72029ab0b584c7fd56b5a09119034be5" style="width: 100.0%; height: 100.0%;"><b>Mechanical lab</b><br>Lat: 31.46222, Lng: 73.14749</div>`)[0];
+                popup_c016a576ee0c1a7caab445ef30a2ff8d.setContent(html_72029ab0b584c7fd56b5a09119034be5);
+            
+        
+
+        marker_46749780ff775349a405afd92b4b83a3.bindPopup(popup_c016a576ee0c1a7caab445ef30a2ff8d)
+        ;
+
+        
+    
+    
+                marker_46749780ff775349a405afd92b4b83a3.setIcon(icon_372c2f58b62dcb04451ec57f0fb8e751);
+            
+    
+            var marker_2d4809e5b595c2065c201ca6493e432d = L.marker(
+                [31.46213444529757, 73.14707584760606],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_2a93eb79aa8fd8189812e4fc27e40ed6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9889110d3904b7aa4262af5876a5ee38 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7dda988fbf5a42acb6f21e1629871620 = $(`<div id="html_7dda988fbf5a42acb6f21e1629871620" style="width: 100.0%; height: 100.0%;"><b>Knitting Department</b><br>Lat: 31.46213, Lng: 73.14708</div>`)[0];
+                popup_9889110d3904b7aa4262af5876a5ee38.setContent(html_7dda988fbf5a42acb6f21e1629871620);
+            
+        
+
+        marker_2d4809e5b595c2065c201ca6493e432d.bindPopup(popup_9889110d3904b7aa4262af5876a5ee38)
+        ;
+
+        
+    
+    
+                marker_2d4809e5b595c2065c201ca6493e432d.setIcon(icon_2a93eb79aa8fd8189812e4fc27e40ed6);
+            
+    
+            var marker_748e6ae217a6a6dd13b7d90f9d26219c = L.marker(
+                [31.462325670460732, 73.14699990255063],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_8070af18cbae207ef4f4af0742356631 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b47b36c4d8d4219909d04cbd6f9251a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_38b2d496683862791e63213bf26b53e4 = $(`<div id="html_38b2d496683862791e63213bf26b53e4" style="width: 100.0%; height: 100.0%;"><b>Polymer Engineers</b><br>Lat: 31.46233, Lng: 73.14700</div>`)[0];
+                popup_b47b36c4d8d4219909d04cbd6f9251a9.setContent(html_38b2d496683862791e63213bf26b53e4);
+            
+        
+
+        marker_748e6ae217a6a6dd13b7d90f9d26219c.bindPopup(popup_b47b36c4d8d4219909d04cbd6f9251a9)
+        ;
+
+        
+    
+    
+                marker_748e6ae217a6a6dd13b7d90f9d26219c.setIcon(icon_8070af18cbae207ef4f4af0742356631);
+            
+    
+            var marker_8ff6a7f0705d10b22be34e75564fadab = L.marker(
+                [31.46268539522329, 73.14757526142752],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_d43c775491d05f6129e65ca105398907 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1252cc8ea4269f302080ac387d124931 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17ecf58bb4bf1c5e32a5d467571843b9 = $(`<div id="html_17ecf58bb4bf1c5e32a5d467571843b9" style="width: 100.0%; height: 100.0%;"><b>School of Engineering and Technology</b><br>Lat: 31.46269, Lng: 73.14758</div>`)[0];
+                popup_1252cc8ea4269f302080ac387d124931.setContent(html_17ecf58bb4bf1c5e32a5d467571843b9);
+            
+        
+
+        marker_8ff6a7f0705d10b22be34e75564fadab.bindPopup(popup_1252cc8ea4269f302080ac387d124931)
+        ;
+
+        
+    
+    
+                marker_8ff6a7f0705d10b22be34e75564fadab.setIcon(icon_d43c775491d05f6129e65ca105398907);
+            
+    
+            var marker_fb22f689ce235d1821156f5ea316fe5f = L.marker(
+                [31.46280872347778, 73.14887970728613],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_dbc30f8c20fbb09abd028654b86f7e5d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f5a8661bce246765290311d922833a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9e56deeee05be22d6cf6dcea3b7097eb = $(`<div id="html_9e56deeee05be22d6cf6dcea3b7097eb" style="width: 100.0%; height: 100.0%;"><b>IT Center</b><br>Lat: 31.46281, Lng: 73.14888</div>`)[0];
+                popup_0f5a8661bce246765290311d922833a8.setContent(html_9e56deeee05be22d6cf6dcea3b7097eb);
+            
+        
+
+        marker_fb22f689ce235d1821156f5ea316fe5f.bindPopup(popup_0f5a8661bce246765290311d922833a8)
+        ;
+
+        
+    
+    
+                marker_fb22f689ce235d1821156f5ea316fe5f.setIcon(icon_dbc30f8c20fbb09abd028654b86f7e5d);
+            
+    
+            var marker_7245b1e0986911f6e87e453f05b9e140 = L.marker(
+                [31.46303434926647, 73.14925274172467],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_21f32bdd6d49696f09df1a2c53dc9725 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2925b4e29d9721528736e339748aeb03 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_55b17c26cbe6744a76f1aa548c109dce = $(`<div id="html_55b17c26cbe6744a76f1aa548c109dce" style="width: 100.0%; height: 100.0%;"><b>School of Arts and Design</b><br>Lat: 31.46303, Lng: 73.14925</div>`)[0];
+                popup_2925b4e29d9721528736e339748aeb03.setContent(html_55b17c26cbe6744a76f1aa548c109dce);
+            
+        
+
+        marker_7245b1e0986911f6e87e453f05b9e140.bindPopup(popup_2925b4e29d9721528736e339748aeb03)
+        ;
+
+        
+    
+    
+                marker_7245b1e0986911f6e87e453f05b9e140.setIcon(icon_21f32bdd6d49696f09df1a2c53dc9725);
+            
+    
+            var marker_b3e43e7c9f276f7f4715ac6aaa18fd83 = L.marker(
+                [31.462306660447254, 73.1488045809811],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_ba849b22ad38388fd28774fc2ee78ce5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9aaedda32322f823627d5b5a39a4fbea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_09b1bcbe4a1fa63d410973ce5f5da303 = $(`<div id="html_09b1bcbe4a1fa63d410973ce5f5da303" style="width: 100.0%; height: 100.0%;"><b>student advisor office</b><br>Lat: 31.46231, Lng: 73.14880</div>`)[0];
+                popup_9aaedda32322f823627d5b5a39a4fbea.setContent(html_09b1bcbe4a1fa63d410973ce5f5da303);
+            
+        
+
+        marker_b3e43e7c9f276f7f4715ac6aaa18fd83.bindPopup(popup_9aaedda32322f823627d5b5a39a4fbea)
+        ;
+
+        
+    
+    
+                marker_b3e43e7c9f276f7f4715ac6aaa18fd83.setIcon(icon_ba849b22ad38388fd28774fc2ee78ce5);
+            
+    
+            var marker_f987f536dc63c208e37b328ad4b0b333 = L.marker(
+                [31.462233187200482, 73.14969920763079],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_e5f7fbacd24774f23650ed1a2aba86f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db79bebe7d67fe25d4898a8481e1261e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9fe13642ed29d2d5699253922b5968b0 = $(`<div id="html_9fe13642ed29d2d5699253922b5968b0" style="width: 100.0%; height: 100.0%;"><b>Textile commissioner organization</b><br>Lat: 31.46223, Lng: 73.14970</div>`)[0];
+                popup_db79bebe7d67fe25d4898a8481e1261e.setContent(html_9fe13642ed29d2d5699253922b5968b0);
+            
+        
+
+        marker_f987f536dc63c208e37b328ad4b0b333.bindPopup(popup_db79bebe7d67fe25d4898a8481e1261e)
+        ;
+
+        
+    
+    
+                marker_f987f536dc63c208e37b328ad4b0b333.setIcon(icon_e5f7fbacd24774f23650ed1a2aba86f2);
+            
+    
+            var marker_f36646c14b02830e99820d74827de019 = L.marker(
+                [31.46292643690325, 73.1496719603786],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_9c86f239fda935efb55b703bfa334a47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26af0c250026694e44e5a97163f0d639 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0e5876695c51342b7b8c131667df5bbc = $(`<div id="html_0e5876695c51342b7b8c131667df5bbc" style="width: 100.0%; height: 100.0%;"><b>Dispensary</b><br>Lat: 31.46293, Lng: 73.14967</div>`)[0];
+                popup_26af0c250026694e44e5a97163f0d639.setContent(html_0e5876695c51342b7b8c131667df5bbc);
+            
+        
+
+        marker_f36646c14b02830e99820d74827de019.bindPopup(popup_26af0c250026694e44e5a97163f0d639)
+        ;
+
+        
+    
+    
+                marker_f36646c14b02830e99820d74827de019.setIcon(icon_9c86f239fda935efb55b703bfa334a47);
+            
+    
+            var marker_7663768d307f02bf444f496fc87a6b1f = L.marker(
+                [31.463531685835875, 73.14867077101306],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_83a01b2ec844e51025184adf75b96b19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c17f17d0682028a06d3576f718ecfe10 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1cfac396b8ec228a5fecf81c9529ce89 = $(`<div id="html_1cfac396b8ec228a5fecf81c9529ce89" style="width: 100.0%; height: 100.0%;"><b>Cricket ground</b><br>Lat: 31.46353, Lng: 73.14867</div>`)[0];
+                popup_c17f17d0682028a06d3576f718ecfe10.setContent(html_1cfac396b8ec228a5fecf81c9529ce89);
+            
+        
+
+        marker_7663768d307f02bf444f496fc87a6b1f.bindPopup(popup_c17f17d0682028a06d3576f718ecfe10)
+        ;
+
+        
+    
+    
+                marker_7663768d307f02bf444f496fc87a6b1f.setIcon(icon_83a01b2ec844e51025184adf75b96b19);
+            
+    
+            var marker_2aad7a4d709b7299bd6f790ba80130b4 = L.marker(
+                [31.464066198080545, 73.15013049282585],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_79962a7b8ca6ae1e9343e3420cde7d7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c292f9adbbf66a7c490272612bbb32f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_389266a2f29dcf18fe5e1f6fe162847a = $(`<div id="html_389266a2f29dcf18fe5e1f6fe162847a" style="width: 100.0%; height: 100.0%;"><b>Girls Hostel</b><br>Lat: 31.46407, Lng: 73.15013</div>`)[0];
+                popup_c292f9adbbf66a7c490272612bbb32f2.setContent(html_389266a2f29dcf18fe5e1f6fe162847a);
+            
+        
+
+        marker_2aad7a4d709b7299bd6f790ba80130b4.bindPopup(popup_c292f9adbbf66a7c490272612bbb32f2)
+        ;
+
+        
+    
+    
+                marker_2aad7a4d709b7299bd6f790ba80130b4.setIcon(icon_79962a7b8ca6ae1e9343e3420cde7d7e);
+            
+    
+            var marker_c1ba4a07edc7d271f9d7ac46438e6c8e = L.marker(
+                [31.463737106593715, 73.15000516317625],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_11802a92d1b9d7f443d63af1af6e8182 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd4bc902f604d678eaee3fb8e507cac8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_34f48c61d9131505527e6332daa8f5f9 = $(`<div id="html_34f48c61d9131505527e6332daa8f5f9" style="width: 100.0%; height: 100.0%;"><b>Females faculty hostel NTU</b><br>Lat: 31.46374, Lng: 73.15001</div>`)[0];
+                popup_cd4bc902f604d678eaee3fb8e507cac8.setContent(html_34f48c61d9131505527e6332daa8f5f9);
+            
+        
+
+        marker_c1ba4a07edc7d271f9d7ac46438e6c8e.bindPopup(popup_cd4bc902f604d678eaee3fb8e507cac8)
+        ;
+
+        
+    
+    
+                marker_c1ba4a07edc7d271f9d7ac46438e6c8e.setIcon(icon_11802a92d1b9d7f443d63af1af6e8182);
+            
+    
+            var marker_a37f5cc302012f56cbdf3ab01df62739 = L.marker(
+                [31.463238786395106, 73.14754245600439],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_ab1d64b133c57a52b736d3860095567a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f81be2855fc232c7814a1239ab535b92 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21748e6f08ff6c895f25318dece67ee8 = $(`<div id="html_21748e6f08ff6c895f25318dece67ee8" style="width: 100.0%; height: 100.0%;"><b>Masjid</b><br>Lat: 31.46324, Lng: 73.14754</div>`)[0];
+                popup_f81be2855fc232c7814a1239ab535b92.setContent(html_21748e6f08ff6c895f25318dece67ee8);
+            
+        
+
+        marker_a37f5cc302012f56cbdf3ab01df62739.bindPopup(popup_f81be2855fc232c7814a1239ab535b92)
+        ;
+
+        
+    
+    
+                marker_a37f5cc302012f56cbdf3ab01df62739.setIcon(icon_ab1d64b133c57a52b736d3860095567a);
+            
+    
+            var marker_a309d2ffd32e13aba41d727806093d3e = L.marker(
+                [31.46266492968611, 73.14938226847548],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_8c7517e5ebd98a2891ca3b124167b9e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12a7f02a9a128b405df30a9c57c27a02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82e0b46359283cc3136955c0e9c05e60 = $(`<div id="html_82e0b46359283cc3136955c0e9c05e60" style="width: 100.0%; height: 100.0%;"><b>Faisalabad business school (FBS)</b><br>Lat: 31.46266, Lng: 73.14938</div>`)[0];
+                popup_12a7f02a9a128b405df30a9c57c27a02.setContent(html_82e0b46359283cc3136955c0e9c05e60);
+            
+        
+
+        marker_a309d2ffd32e13aba41d727806093d3e.bindPopup(popup_12a7f02a9a128b405df30a9c57c27a02)
+        ;
+
+        
+    
+    
+                marker_a309d2ffd32e13aba41d727806093d3e.setIcon(icon_8c7517e5ebd98a2891ca3b124167b9e6);
+            
+    
+            var marker_1f221159c811f3a12475affb9ebfd964 = L.marker(
+                [31.46322330048504, 73.1467574917468],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_e3e47da01f921397a085430806240994 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b64b68ac8922a63a1b0adb81486eb448 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9ac88b6eac1cee2347c8457f2f916ff = $(`<div id="html_d9ac88b6eac1cee2347c8457f2f916ff" style="width: 100.0%; height: 100.0%;"><b>New Boys Hostel</b><br>Lat: 31.46322, Lng: 73.14676</div>`)[0];
+                popup_b64b68ac8922a63a1b0adb81486eb448.setContent(html_d9ac88b6eac1cee2347c8457f2f916ff);
+            
+        
+
+        marker_1f221159c811f3a12475affb9ebfd964.bindPopup(popup_b64b68ac8922a63a1b0adb81486eb448)
+        ;
+
+        
+    
+    
+                marker_1f221159c811f3a12475affb9ebfd964.setIcon(icon_e3e47da01f921397a085430806240994);
+            
+    
+            var marker_be603932413b44a4b4d2ef0b0686633b = L.marker(
+                [31.463841622433254, 73.1468785709324],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_c64bf37ce8dc8f138ba86d57cfdc6cb2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eba48bffd58ca9d7fdc5c4b016137186 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9eace406b36d202af705731caca752d7 = $(`<div id="html_9eace406b36d202af705731caca752d7" style="width: 100.0%; height: 100.0%;"><b>Soccer ground</b><br>Lat: 31.46384, Lng: 73.14688</div>`)[0];
+                popup_eba48bffd58ca9d7fdc5c4b016137186.setContent(html_9eace406b36d202af705731caca752d7);
+            
+        
+
+        marker_be603932413b44a4b4d2ef0b0686633b.bindPopup(popup_eba48bffd58ca9d7fdc5c4b016137186)
+        ;
+
+        
+    
+    
+                marker_be603932413b44a4b4d2ef0b0686633b.setIcon(icon_c64bf37ce8dc8f138ba86d57cfdc6cb2);
+            
+    
+            var marker_7aeb907b1b0ab517cad02aec4bb27c06 = L.marker(
+                [31.46382674860371, 73.14616711287164],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_9e06aab99ea7487b228b2e56f87e8323 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_23745a2ef0514378398b2ffce41128c2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f9b4f847916d6f5e27a0a51e6522beb = $(`<div id="html_8f9b4f847916d6f5e27a0a51e6522beb" style="width: 100.0%; height: 100.0%;"><b>Badminton Ground</b><br>Lat: 31.46383, Lng: 73.14617</div>`)[0];
+                popup_23745a2ef0514378398b2ffce41128c2.setContent(html_8f9b4f847916d6f5e27a0a51e6522beb);
+            
+        
+
+        marker_7aeb907b1b0ab517cad02aec4bb27c06.bindPopup(popup_23745a2ef0514378398b2ffce41128c2)
+        ;
+
+        
+    
+    
+                marker_7aeb907b1b0ab517cad02aec4bb27c06.setIcon(icon_9e06aab99ea7487b228b2e56f87e8323);
+            
+    
+            var marker_de56846bf2e1d089ba346c3d51cc584c = L.marker(
+                [31.464183719860642, 73.14608689946283],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_bfd65fa4a606499d9e1e5d62d88d4cb6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9859a9013a8be9f623725d130ef6815d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0fb3ad004301c1ba6e7473f74ae1d4d = $(`<div id="html_e0fb3ad004301c1ba6e7473f74ae1d4d" style="width: 100.0%; height: 100.0%;"><b>Old Boys Hostel</b><br>Lat: 31.46418, Lng: 73.14609</div>`)[0];
+                popup_9859a9013a8be9f623725d130ef6815d.setContent(html_e0fb3ad004301c1ba6e7473f74ae1d4d);
+            
+        
+
+        marker_de56846bf2e1d089ba346c3d51cc584c.bindPopup(popup_9859a9013a8be9f623725d130ef6815d)
+        ;
+
+        
+    
+    
+                marker_de56846bf2e1d089ba346c3d51cc584c.setIcon(icon_bfd65fa4a606499d9e1e5d62d88d4cb6);
+            
+    
+            var marker_b19ae8e556465f7d271aa4b0b3bd8774 = L.marker(
+                [31.461641859695206, 73.14941717009793],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_851db49b0cdc1ecc37e097b0763e74a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88bed5f874a9945156603bb2bcd3e678 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49b9104aa7ad4d3d843146afe7eea8ba = $(`<div id="html_49b9104aa7ad4d3d843146afe7eea8ba" style="width: 100.0%; height: 100.0%;"><b>Hockey Ground</b><br>Lat: 31.46164, Lng: 73.14942</div>`)[0];
+                popup_88bed5f874a9945156603bb2bcd3e678.setContent(html_49b9104aa7ad4d3d843146afe7eea8ba);
+            
+        
+
+        marker_b19ae8e556465f7d271aa4b0b3bd8774.bindPopup(popup_88bed5f874a9945156603bb2bcd3e678)
+        ;
+
+        
+    
+    
+                marker_b19ae8e556465f7d271aa4b0b3bd8774.setIcon(icon_851db49b0cdc1ecc37e097b0763e74a6);
+            
+    
+            var marker_b73f0590594a064e0c4fa054b941432e = L.marker(
+                [31.462919041909956, 73.14807458744437],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_cbb6cb0216151eeb5d740370589ca8f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_395a7a7c83a86d04c8d2f8258b5d6100 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fd6daee425ecaab86a81f6a29a3bb18 = $(`<div id="html_7fd6daee425ecaab86a81f6a29a3bb18" style="width: 100.0%; height: 100.0%;"><b>Cafeteria</b><br>Lat: 31.46292, Lng: 73.14807</div>`)[0];
+                popup_395a7a7c83a86d04c8d2f8258b5d6100.setContent(html_7fd6daee425ecaab86a81f6a29a3bb18);
+            
+        
+
+        marker_b73f0590594a064e0c4fa054b941432e.bindPopup(popup_395a7a7c83a86d04c8d2f8258b5d6100)
+        ;
+
+        
+    
+    
+                marker_b73f0590594a064e0c4fa054b941432e.setIcon(icon_cbb6cb0216151eeb5d740370589ca8f5);
+            
+    
+            var marker_f4069cb7aa0f3a3552d6ac848f95d383 = L.marker(
+                [31.461186185169844, 73.14763237136276],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_e0f89939f7f4e60dc50d9a25e73d7662 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_903208f39f1642470c1b266364915ca5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9c92480e3c8a124d6d11cbd98a71751e = $(`<div id="html_9c92480e3c8a124d6d11cbd98a71751e" style="width: 100.0%; height: 100.0%;"><b>KnowTex Solution</b><br>Lat: 31.46119, Lng: 73.14763</div>`)[0];
+                popup_903208f39f1642470c1b266364915ca5.setContent(html_9c92480e3c8a124d6d11cbd98a71751e);
+            
+        
+
+        marker_f4069cb7aa0f3a3552d6ac848f95d383.bindPopup(popup_903208f39f1642470c1b266364915ca5)
+        ;
+
+        
+    
+    
+                marker_f4069cb7aa0f3a3552d6ac848f95d383.setIcon(icon_e0f89939f7f4e60dc50d9a25e73d7662);
+            
+    
+            var marker_33ac434858b5e3686992293ab550a4bf = L.marker(
+                [31.46115529840744, 73.14772155481016],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_1fb49b3147eee4d2e210905f237ebe3a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ffcc8f073f58ef3bc432966f86e3485c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0fe033517bdb4b093ee5d52bf2197f6 = $(`<div id="html_b0fe033517bdb4b093ee5d52bf2197f6" style="width: 100.0%; height: 100.0%;"><b>NTU Reserach centre</b><br>Lat: 31.46116, Lng: 73.14772</div>`)[0];
+                popup_ffcc8f073f58ef3bc432966f86e3485c.setContent(html_b0fe033517bdb4b093ee5d52bf2197f6);
+            
+        
+
+        marker_33ac434858b5e3686992293ab550a4bf.bindPopup(popup_ffcc8f073f58ef3bc432966f86e3485c)
+        ;
+
+        
+    
+    
+                marker_33ac434858b5e3686992293ab550a4bf.setIcon(icon_1fb49b3147eee4d2e210905f237ebe3a);
+            
+    
+            var marker_6dbe64e3d922a4be70af680bdf908151 = L.marker(
+                [31.46337970770594, 73.14731845808372],
+                {
+}
+            ).addTo(map_90f87ad128f09b3bcf52fc52b55da962);
+        
+    
+            var icon_f5d05a34dc9ccd297d423c8ed6dee2e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_634f469ff082831e34196c7988b92dbe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9bc9f8d564cadef1e1c9eafb5986a597 = $(`<div id="html_9bc9f8d564cadef1e1c9eafb5986a597" style="width: 100.0%; height: 100.0%;"><b>Open Gym</b><br>Lat: 31.46338, Lng: 73.14732</div>`)[0];
+                popup_634f469ff082831e34196c7988b92dbe.setContent(html_9bc9f8d564cadef1e1c9eafb5986a597);
+            
+        
+
+        marker_6dbe64e3d922a4be70af680bdf908151.bindPopup(popup_634f469ff082831e34196c7988b92dbe)
+        ;
+
+        
+    
+    
+                marker_6dbe64e3d922a4be70af680bdf908151.setIcon(icon_f5d05a34dc9ccd297d423c8ed6dee2e7);
+            
+</script>
+</html>
